@@ -1,6 +1,11 @@
 @import url('./fuentes/style.css');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body 
 
 .title {
+
   text-align: center;
   /* position: absolute; */
   top: 50%;
@@ -15,7 +20,7 @@
 
 
 .text1 {
-  color: #272823 ;
+  color: #0092CB ;
   font-size: 70px;
   font-weight: bold;
   letter-spacing: 8px;
@@ -23,6 +28,7 @@
   margin-bottom: 10px;
   background: #fff;
   animation: text 2.5s 1;
+  /* text-shadow: 4px 1px 3px rgba(193,193,193,0.53); */
 }
 
 @keyframes text {
@@ -74,6 +80,14 @@ a {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+
+  /* grid-template-rows: repeat(4, 100px); */
   /* width: 15%; */
 }
 
@@ -85,12 +99,23 @@ a {
   padding: 2px 16px;
 }
 
-img {
-  object-fit: fill;
-  width: 100%;
-  height: 160px;
+h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #01A7DE;
+  margin: 5px;
+  font-size: 30px;
 }
 
+h4{
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  margin: 5px;
+}
+
+p {
+  color: gray;
+  font-size: 15px;
+}
 
 .menu {
   background-color: #fff;
@@ -109,19 +134,26 @@ img {
   /* align-content: flex-start; */
 }
 
-@media (min-width: 1024px) {
-  h1 {
-    font-size: 80px;
-    color: blue;
-  }
+
+
+.btn {
+  background: radial-gradient(circle, rgba(46,157,209,1) 0%, rgba(63,157,201,1) 100%);  
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+
 }
 
-
-@media (min-width: 868px) {
-  .text1 {
-    font-size: 70px;
-    letter-spacing: 8px;
-
-  }
+.btn:hover {
+  background-color: rgb(2, 126, 175);
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(.59,2.05,.47,-1.46);
 }
-
