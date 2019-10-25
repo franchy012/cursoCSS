@@ -1,0 +1,58 @@
+@import url('../style.css');
+/* Deskopt Firts */
+
+/* h1 {
+  font-size: 80px;
+  color: blue;
+}
+
+p {
+  font-size: 32px;
+  background-color: yellow;
+  color: red;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+    color: red;
+  }
+}
+
+@media (max-width: 768px) {
+  p {
+    background-color: black;
+    color: #fff;
+  }
+} */
+
+
+/* Mobile first */
+
+h1 {
+  font-size: 40px;
+  color: red;
+}
+
+p {
+  background-color: black;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  p {
+    background: yellow;
+    color: red;
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 80px;
+    color: blue;
+  }
+}
+
+
+

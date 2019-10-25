@@ -1,0 +1,55 @@
+@import url('../style.css');
+
+/* Definición de variables */
+:root {
+  --colorPrimario: lightgreen;
+  --colorSecundario: pink;
+
+  --colorLectura: rgb(49, 49, 49);
+
+  --boxShadow: 0 0 30px #575555;
+
+  --paddingMobile: 16px;
+
+  --fzMobile: 16px;
+  --fzDesktop: 22px;
+
+  --gapMobile: 20px;
+  --gapDesktop: 40px;
+}
+
+/* Uso de las variables */
+div[class*='contenedor'] {
+  padding: var(--paddingMobile);
+  box-shadow: var(--boxShadow);
+  margin: var(--gapMobile);
+}
+
+.contenedor-uno {
+  background-color: var(--colorPrimario);
+}
+
+.contenedor-dos {
+  background-color: var(--colorSecundario);
+}
+
+p {
+  color: var(--colorLectura);
+  font-size: var(--fzMobile);
+}
+
+@media (min-width: 768px) {
+  div[class*='contenedor'] {
+    margin: var(--gapDesktop);
+  }
+  p {
+    font-size: var(--fzDesktop);
+  }
+  .contenedor-uno {
+    background-color: var(--colorSecundario);
+  }
+  
+  .contenedor-dos {
+    background-color: var(--colorPrimario);
+  }
+}

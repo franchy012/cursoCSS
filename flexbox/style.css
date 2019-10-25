@@ -1,0 +1,85 @@
+@import url('../style.css');
+
+
+body {
+  background-color: #dedede;
+}
+
+.contenedor {
+  height: 400px;
+  background-color: #fff;
+  border: 10px solid black;
+
+  display: flex;
+
+
+  /* flex-wrap: wrap; */
+
+
+  /* Flex-direction define cual es el eje principal y por lo tanto, el secundario */
+  flex-direction: row;
+  /* flex-direction: column; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column-reverse; */
+
+
+  /* Alineación en el eje principal */
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  
+
+  /* Alineación en el eje secundario */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  /* align-items: stretch; */
+  /* align-items: baseline; */
+
+  /* Alineación en el eje secunadario cuando tengo mas de 1 linea */
+
+  /* align-content: center; */
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+
+}
+
+.item {
+  margin: 5px;
+  background-color: orange;
+  text-align: center;
+  color: #fff;
+  /* width: 50px; */
+  height: 50px;
+
+  flex-basis: 50px;
+  
+}
+
+.item:nth-of-type(1) {
+  order: 3;
+}
+.item:nth-of-type(2) {
+  background-color: blue;
+  /* flex-grow: 2; */
+  /* flex-shrink: 2; */
+  order: 1;
+
+  align-self: center;
+}
+.item:nth-of-type(3) {
+  order: 4;
+  align-self: flex-end;
+}
+.item:nth-of-type(4) {
+  order: 5;
+  align-self: stretch;
+  height: auto;
+}
+.item:nth-of-type(5) {
+  order: 4;
+  align-self: flex-start;
+}
